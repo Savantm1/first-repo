@@ -1,18 +1,164 @@
 html{
 	background: #ccc;
 }
+
 *{
 	box-sizing: border-box;
 	text-decoration: none;
 }
 
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+a {
+text-decoration: none; /*убираем подчеркивание текста ссылок*/
+color:white;
+font-weight: bold;
+}
+
+button {
+border:none;
+}
+
+html{
+	font-family: 'Raleway', sans-serif;
+}
+
+header{
+	height: 750px;
+	background-image: linear-gradient(to right bottom, rgba(28,234,190,0.7) 30% , #0eb5cc), url(../img/background-header.png);
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+
 .container{
 	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.navbar{
+	padding-top: 50px;
+	padding-bottom: 160px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.main-menu{
+	min-width:500px;
+	display:flex;
+	justify-content: space-between;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main-menu li{
 	margin: 0 auto;
 }
-.logo{
-	color:red;
+
+.login{
+	background-color: rgba(0,0,0,0);
+	color:white;
+	padding:8px 20px;
+	border:2px solid white;
+	border-radius: 3px;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width:580px;
+	height: 320px;
+	color:white;
+	display: 
+}
+
+.content__text h1{
+	margin:0;
+	font-size: 40px;
+	font-weight:super-bold;
+	text-transform: uppercase;
+
+}
+
+.content__text p{
+	font-size: 20px;
+	line-height: 1.8em;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	max-width: 400px;
+}
+.btn{
+	padding:20px 45px;
+	border-radius: 5px;
+	background: white;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.btn a {
+	color:#061e37;	
+}
+
+.btn-dark {
+	background:#061e37; 
+}
+
+.btn-dark a {
+	color:white;
+}
+.videoplayer {
+	background-image: url(../img/background_video.png);
+	background-size: cover;
+	width:600px;
+	height:320px;
+	display: flex;
+}
+
+.play{
+	position:relative;
+	left:40%;
+	top:35%;
+}
+.videoplayer a {
+	color:#061e37;
+	font-weight: bold;
+}
+
+.play img{
+	padding-left: 30px;
+}
+
+.tools{
+	display: flex;
+	flex-direction: column;
+	background: white;
+}
+
+.description {
+	margin:20px auto;
+	max-width: 560px;
+	max-height: 160px;
+	text-align: center;
+}
+
+h2{
+	font-weight: bold;
+	font-size:45px;
+}
+
+span {
+	color: #6c6c6c;
 }
